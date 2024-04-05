@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "SMExtended",
+    "version": "1.0",
+  
+    "description": "Adds additional functionality to SongMaker",
+  
+    "icons": {
+      "48": "icons/border-48.png"
+    },
+    "permissions": [
+        "storage"
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+          "id": "smextended@jdev.eu.org",
+          "strict_min_version": "120.0"
+        }
+      },      
+    "content_scripts": [
+      {
+        "matches": ["https://musiclab.chromeexperiments.com/Song-Maker/*"],
+        "js": ["extend.js"]
+      }
+    ],
+    "options_ui": {
+        "page": "options.html"
+      }      
+  }
