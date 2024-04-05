@@ -1,0 +1,27 @@
+body {
+    margin: 4pt;
+}
+
+button {
+    border: gray solid 1px;
+    padding: 4pt;
+    border-radius: 8pt;
+    width: 36pt;
+    text-align: center;
+    background-color: white;
+    outline: none;
+}
+
+form {
+    margin-top: 4pt;
+}
+
+input {
+    background-color: lightblue;
+    padding: 4pt;
+    width: 64pt;
+    text-align: center;
+    border: gray solid 1px;
+    border-radius: 8pt;
+    outline: none;
+}
