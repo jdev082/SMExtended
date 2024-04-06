@@ -1,4 +1,5 @@
 const header = document.getElementById("header-logo")
+const bottom = document.getElementById("bottom")
 const canvas = document.getElementById("instrument-canvas")
 const tempoSlider = document.getElementsByName("tempo")
 
@@ -15,6 +16,7 @@ tlimit.then(setTLimit, (error) => {alert(error)});
 
 function setBackground(c) {
     document.body.style.backgroundColor = c.color
+    bottom.style.backgroundColor = c.color
 }
 
 function setTLimit(t) {
