@@ -2,7 +2,10 @@ const header = document.getElementById("header-logo")
 const canvas = document.getElementById("instrument-canvas")
 const tempoSlider = document.getElementsByName("tempo")
 
-header.style.color = "white"
+const colorfix = "#topbar { filter: invert(100); }"
+style = document.createElement('style')
+style.innerHTML = colorfix
+document.head.appendChild(style)
 
 let color = browser.storage.sync.get("color");
 color.then(setBackground, () => {return})
