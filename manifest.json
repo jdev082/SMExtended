@@ -22,8 +22,5 @@
         "matches": ["https://musiclab.chromeexperiments.com/Song-Maker/*"],
         "js": ["extend.js"]
       }
-    ],
-    "options_ui": {
-        "page": "options.html"
-      }      
+    ]   
   }
