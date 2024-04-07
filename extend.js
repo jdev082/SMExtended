@@ -15,6 +15,23 @@ function createBreak(parent = document, height = 1) {
     parent.appendChild(br)
 }
 
+function createSettings() {
+
+    expandable = document.getElementById("expandable-inner")
+
+    createBreak(expandable, 2)
+
+    //ptempoArea = document.createElement("div")
+    //ptempoArea.class = "setting-group"
+
+    ptempo = document.createElement("input")
+    ptempo.type = "checkbox"
+
+    //ptempoArea.appendChild(ptempo)
+    expandable.appendChild(ptempo)
+
+}
+
 createBreak(rangeCover, 2.8)
 var tempoInput = document.createElement("input")
 tempoInput.placeholder = "Tempo (Precise)"
@@ -23,9 +40,7 @@ tempoInput.addEventListener("change", () => {
 })
 rangeCover.appendChild(tempoInput)
 
-//settingsBtn.addEventListener("click", () => {
-//    bars = document.getElementById("bars")
-//    bars.max = "9999"
-//})
 
-console.log(o)
+settingsBtn.addEventListener("click", () => {
+    createSettings()
+})
